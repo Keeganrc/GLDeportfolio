@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-    background: #b9ccda;
+    background: #d6d0d7;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -30,7 +30,7 @@ body {
 .header {
     width: 230px;
     height: 60px;
-    background-color: #b9ccda;
+    background-color: #d6d0d7;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,7 +52,7 @@ body {
     margin-top: 60px;
     transform: translateX(-230px);
     transition: transform 230ms ease-in-out;
-    background: linear-gradient(180deg, #b9ccda 0%, #78a4c3 100%);
+    background: linear-gradient(180deg, #d6d0d7 0%, #4e4850 100%);
 }
 
 .side-bar-menu-inner{
@@ -175,7 +175,7 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 
 .tab:hover,
 .tab.active {
-    color: #1d5062;
+    color: #3f3b41;
 }
 
 .main-content {
@@ -202,7 +202,7 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
     letter-spacing: 10px;
     padding-bottom: 20px;
     padding-top: 40px;
-    color: #064358; 
+    color: #4e4850; 
 }
 
 .main-content a {
@@ -224,7 +224,7 @@ span {
 }
 
 .p-1 { 
-    color: #064358; 
+    color: #4e4850; 
 }
 
 .fade-in {

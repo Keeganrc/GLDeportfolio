@@ -30,7 +30,7 @@ body {
 .header {
     width: 230px;
     height: 60px;
-    background-color: #b9ccda;
+    background-color: #B9CCDA;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,7 +52,7 @@ body {
     margin-top: 60px;
     transform: translateX(-230px);
     transition: transform 230ms ease-in-out;
-    background: linear-gradient(180deg, #b9ccda 0%, #78a4c3 100%);
+    background: linear-gradient(180deg, #B9CCDA 0%, #495C64 100%);
 }
 
 .side-bar-menu-inner{
@@ -175,36 +175,73 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 
 .tab:hover,
 .tab.active {
-    color: #1d5062;
+    color: #363d3f; 
 }
 
-.main-content {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 50px;
-}
+/*key insight 1 styling*/
 
-/*key insight 3 styling*/
-
-.main-content h1 {
-    font-family: 'Modern-Bold';
+.title {
     text-align: center;
-    font-size: 2.2rem;
-    text-decoration: underline;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
 }
 
-.section {
-    margin-bottom: 40px;
+.title h1 {
+    font-family: 'Modern-Bold';
+    font-size: 35px;
+    letter-spacing: 5px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #363d3f; 
 }
+
+.title h3 {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: #495d64; 
+}
+
 
 .section h2, #artifacts-title{
     font-family: 'Modern-Bold';
-    font-size: 2rem;
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: white; 
+    text-align: center;
+}
+
+.first-character {
+    font-size: 60px;
+    float: left;
+    line-height: 1;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.p-1, .p-2, .p-3, .p-4, .p-5 { 
+    color: #495d64; 
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .section p {
-    font-family: 'sans-serif';
-    font-size: 1.2rem;
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+    padding: 10px 20px;
+    max-width: 800px;
 }
 
 .section-two {
@@ -212,10 +249,68 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
     border-radius: 10px;
 }
 
+.bg-section {
+    width: 100%;
+    height: 125px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.bg-one {
+    background-image: url('../images/insight3-images/bkg-img.jpg');
+    background-position: center top;
+}
+
+.bg-two {
+    background-image: url('../images/insight3-images/bkg-img.jpg');
+    background-position: center 20%;
+}
+
+.bg-three {
+    background-image: url('../images/insight3-images/bkg-img.jpg');
+    background-position: center 40%;
+}
+
+.bg-four {
+    background-image: url('../images/insight3-images/bkg-img.jpg');
+    background-position: center 60%;
+}
+
+.bg-five {
+    background-image: url('../images/insight3-images/bkg-img.jpg');
+    background-position: center 80%;
+}
+
+.text-overlay {
+    background-color: rgba(0, 0, 0, 0.394);
+    width: 100%;
+    height: 100%;
+
+    display: flex;              
+    align-items: center;       
+    justify-content: center;   
+}
+
+.text-overlay h2 {
+    font-family: 'Modern-Bold';
+    font-size: 30px;
+    letter-spacing: 8px;
+    border-bottom: 1px solid white; 
+    width: 75%;
+    transform: translateY(20%);
+}
+
+
 #artifacts-title {
     margin-top: 50px;
     text-align: center;
     padding-top: 10px;
+    color: black;
+    padding-bottom: 20px;
 }
 
 .artifact-images {
@@ -223,6 +318,11 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+.artifact-images img {
+    max-height: 450px;
+    max-width: 500px;
 }
 
 .fade-in {
@@ -255,3 +355,10 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 ::-webkit-scrollbar-track {
     background-color: #adc7d1;
 }
+
+@media (max-width: 900px) {
+    .text-overlay h2 {
+      letter-spacing: 4px;
+      width: 90%;
+    }
+  }

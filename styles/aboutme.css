@@ -212,11 +212,12 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 }
 
 .block {
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
     padding: 60px 20px;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
-    font-size: 15px;
 }
 
 span {

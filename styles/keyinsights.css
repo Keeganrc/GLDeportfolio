@@ -175,7 +175,88 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
     color: #1d5062;
 }
 
-.main-content {
-    margin-left: 70px;
-    margin-top: 70px;
+/*key insights styles*/
+.item{
+    position: relative;
+	box-shadow: 
+		inset var(--itemWidthMinus) var(--itemWidthMinus) 0 #23566C, 
+		inset var(--itemWidth) var(--itemWidthMinus) 0 #598299, 
+		inset var(--itemWidthMinus) var(--itemWidth) 0 #86ABC2,
+		inset var(--itemWidth) var(--itemWidth) 0 #97ebbf, 
+		0 0 20px silver;
+	transition: box-shadow ease-in-out .6s, color ease-in-out .5s;	
+	width: var(--itemWidth);
+	height: var(--itemWidth);
+	border-radius: 50%;
+	text-align: center;
+	background: center/50%  no-repeat;
+	cursor: pointer;
+	display: grid;
+	color: white;
+	font-size: 3rem;
+	grid-row:  2 / 3;
+}
+
+.item:hover{
+	box-shadow: 
+		inset 0 0 0 transparent, 
+		inset 0 0 0 transparent, 
+		inset 0 0 0 transparent, 
+		inset 0 0 0 transparent, 
+		0 0 40px #598299;
+	color: transparent;
+}
+
+.item p {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease 0.3s; 
+    position: absolute; 
+    width: 80%;
+    color: black;
+    font-size: 2rem;
+}
+
+.item:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+section{
+	--itemWidth: min(300px, 30vw);
+	--itemWidthMinus: calc(-1 * var(--itemWidth));
+	height: max-content;
+	width: max-content;
+	display: grid;
+	grid-template-rows: repeat(2, max-content);
+	grid-template-columns: repeat(3, calc(3vw + var(--itemWidth)));
+	font-family: 'Modern-Bold';
+}
+
+section h3 {
+    font-size: 1.5rem;
+}
+
+section a {
+    text-decoration: none;
+}
+
+
+.item > span {
+	width: 80%;
+	user-select: none; -moz-user-select: none; -webkit-user-select: none;
+}
+
+h3{
+	grid-row: 1 / 2;
+	grid-column: 1 / 4;
+	height: 80px;
+	width: 90vw;
+	text-align: center;
+}
+
+body * { place-self: center;}
+body {
+	display: grid;
+	height: 100vh;
 }

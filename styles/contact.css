@@ -165,7 +165,7 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 }
 
 .tab {
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', sans-serif;
     margin-left: 15px;
     font-size: 17px;
     font-weight: 600;

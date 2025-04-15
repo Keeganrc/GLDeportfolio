@@ -262,7 +262,7 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 }
 
 .card-content h2 {
-    font-family: 'Modern-Bold';
+    font-family: 'Modern-Bold', sans-serif;
     font-size: 35px;
     letter-spacing: 5px;
     margin: 10px 0;
@@ -367,7 +367,15 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 
 @media (max-width: 768px) {
     .card {
-        width: 70%;
+        width: 75%;
         height: 70%;
+    }
+
+    .card-content h2 {
+        font-size: 25px;
+    }
+    
+    .card-content h3 {
+        font-size: 9px;
     }
 }

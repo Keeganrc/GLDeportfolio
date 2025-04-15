@@ -1,3 +1,5 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
 @font-face {
     font-family: 'Modern';
     src: url('../fonts/Modern.otf') format('opentype');
@@ -14,7 +16,7 @@ html, body {
 }
 
 body {
-    background: #adc7d1;
+    background: #b9ccda;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -30,7 +32,7 @@ body {
 .header {
     width: 230px;
     height: 60px;
-    background-color: #adc7d1;
+    background-color: #a8c8e0;
     position: fixed;
     top: 0;
     left: 0;
@@ -52,7 +54,7 @@ body {
     margin-top: 60px;
     transform: translateX(-230px);
     transition: transform 230ms ease-in-out;
-    background: linear-gradient(180deg, #adc7d1 0%, #015170 100%);
+    background: linear-gradient(180deg, #a8c8e0 0%, #064358 100%);
 }
 
 .side-bar-menu-inner{
@@ -178,97 +180,72 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
     color: #1d5062;
 }
 
-.title {
-    font-family: 'Modern-Bold';
-    text-align: center;
-    font-size: 33px;
-    letter-spacing: 10px;
-    padding-bottom: 20px;
-    padding-top: 40px;
-    color: #064358; 
+.main-content {
+    margin-left: 70px;
+    margin-top: 70px;
 }
 
-.bg-section {
+body {
+    background-color: #ddecff;
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 1em;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.glass-btn {
+    width: 100px;
+    height: 100px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.glass-btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+}
+
+.glass-btn img {
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 60px 20px;
-    position: relative;
-    color: white;
-    text-align: center;
+    height: auto;
 }
 
-.bg-one {
-    background-image: url('../images/abtme-bg-3.jpg');
+/* Blue button (Facebook) */
+.blue-btn {
+    box-shadow: 0px 20px 20px -17px rgba(0, 111, 255, 0.53);
 }
 
-.bg-two {
-    background-image: url('../images/abtme-bg-2.jpg');
+.blue-btn:hover {
+box-shadow: 0px 20px 35px -16px rgba(0, 111, 255, 0.65);
 }
 
-.bg-three {
-    background-image: url('../images/abtme-bg-1.jpg');
+/* Red button (LinkedIn) */
+.light-blue-btn {
+    box-shadow: 0px 20px 20px -17px rgba(40, 103, 178, 0.5);
 }
 
-.block {
-    padding: 60px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    font-size: 15px;
+.light-blue-btn:hover {
+    box-shadow: 0px 20px 35px -16px rgba(40, 103, 178, 0.65);
 }
 
-span {
-    margin-right: 10px;
-    font-size: 20px;
+/* Amber button (Instagram) */
+.pink-btn {
+    box-shadow: 0px 20px 20px -17px rgba(255, 159, 16, 0.53);
 }
 
-.first-character {
-    font-size: 60px;
-    float: left;
-    line-height: 1;
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.p-1, .p-2, .p-3 { 
-    color: #064358; 
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in-out forwards;
-    opacity: 0;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-@media (max-width: 600px) {
-    .block {
-        padding: 40px 15px;
-    }
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #d5ebf4;
-    border-radius: 5px;
-    border: none;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(131, 161, 175);
-    border: none;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #adc7d1;
+.pink-btn:hover {
+    box-shadow: 0px 20px 35px -16px rgba(255, 159, 16, 0.6);
 }

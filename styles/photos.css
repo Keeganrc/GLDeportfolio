@@ -182,3 +182,15 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
     margin-left: 70px;
     margin-top: 70px;
 }
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .block {
+        padding: 40px 15px;
+    }
+}

@@ -291,11 +291,12 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 
 .card-content span {
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 15px;
     margin-left: 25px;
 }
 
 #card-text {
+    margin-top: 30px;
     color: #cbcbcb;
     text-align: center;
 }
@@ -327,7 +328,7 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 }
 
 #credit {
-    font-size: 8px;
+    font-size: 6px;
     text-align: center;
 }
 

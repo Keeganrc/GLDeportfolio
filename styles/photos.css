@@ -179,8 +179,8 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
 }
 
 .main-content {
-    margin-left: 70px;
     margin-top: 70px;
+    padding-inline: 15px;
 }
 
 @keyframes fadeIn {
@@ -194,3 +194,24 @@ input[type=checkbox]:checked ~ .sidebar-icon-toggle > .diagonal.part-2 {
         padding: 40px 15px;
     }
 }
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.photo-container img {
+    max-width: 500px;
+    max-height: 400px;
+}
+
+.main-content h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px;
+}
+
